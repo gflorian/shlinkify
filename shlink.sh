@@ -1,4 +1,5 @@
 #!/bin/bash
+#Source: https://github.com/gflorian/shlinkify
 MORE=y
 DOMAIN1=example.com
 DOMAIN2=another.com
