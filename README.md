@@ -16,7 +16,7 @@ You need to change the values for DOMAIN1, DOMAIN2 and APIKEY at the beginning o
 ### Usage
 You may just run shlink.sh and follow the prompts. The only mandatory input is the 'Lang URL' (long URL). All other inputs can be skipped with return. Tags, if desired, need to be comma separated, as in the [web-client](https://app.shlink.io/). If you don't choose a domain, i.e. by entering 1 or 2, it wil use 1.
 
-When an argument is supplied to shlink.sh it will be treated as the long URL and input for this is skipped.
+When an argument is supplied to shlink.sh it will be treated as the long URL and input for this is skipped. Multiple arguments are treated as multiple long urls.
 
 ## Requirements
 bash, tr, curl, jq
