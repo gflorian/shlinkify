@@ -2,13 +2,13 @@
 ## Purpose
 Shorten url using shlink via REST API.
 
-The script uses a shlink instance from [shlink.io](https://shlink.io) running on your main domain example.com to shorten urls via the [REST API](https://shlink.io/documentation/api-docs/) from cli. The script is made for a multi-domain installation with two domains.
+The script uses a shlink instance from [shlink.io](https://shlink.io) running on your main domain example.com to shorten urls via the [REST API](https://shlink.io/documentation/api-docs/) from cli. The script is made for a multi-domain installation with two domains. Read more about [using multiple domains with shlink](https://shlink.io/documentation/advanced/multiple-domains/).
 
 ## How to
 ### Installation
-curl -O https://raw.githubusercontent.com/gflorian/shlinkify/main/shlink.sh
+`curl -O https://raw.githubusercontent.com/gflorian/shlinkify/main/shlink.sh`
 
-chmod u+x shlink.sh
+`chmod u+x shlink.sh`
 
 ### Configuration
 You need to change the values for DOMAIN1, DOMAIN2 and APIKEY at the beginning of the script. Read in the [manual](https://shlink.io/documentation/api-docs/authentication/) on how to generate an api key.
@@ -18,5 +18,8 @@ You may just run shlink.sh and follow the prompts. The only mandatory input is t
 
 When an argument is supplied to shlink.sh it will be treated as the long URL and input for this is skipped. Multiple arguments are treated as multiple long urls.
 
+## TO-DO
+Explain `shlinkinfo.sh` for retrieval of information.
+
 ## Requirements
-bash, tr, curl, jq
+[bash](https://www.gnu.org/software/bash/), [tr](http://www.gnu.org/software/coreutils/tr), [curl](https://curl.se/), [jq](https://stedolan.github.io/jq/)
