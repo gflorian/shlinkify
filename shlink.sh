@@ -13,6 +13,7 @@ while [ "$MORE" == "y" ]; do
 	else
 		echo "Lang URL: $1"
 		OPTIONS="{ \"longUrl\": \"$1\""
+		shift 1
 	fi
 
 	read -p "Titel   : " -r TITLE
